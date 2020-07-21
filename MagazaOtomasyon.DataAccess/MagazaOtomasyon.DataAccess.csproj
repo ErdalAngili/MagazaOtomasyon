@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5736FADA-7F0A-43C7-9B59-B50686504047}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MagazaOtomasyon.DataAccess</RootNamespace>
+    <AssemblyName>MagazaOtomasyon.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IBankaDal.cs" />
+    <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="Abstract\IFaturaBilgiDal.cs" />
+    <Compile Include="Abstract\IFaturaDetayDal.cs" />
+    <Compile Include="Abstract\IFirmaDal.cs" />
+    <Compile Include="Abstract\IFirmaHareketDal.cs" />
+    <Compile Include="Abstract\IGiderDal.cs" />
+    <Compile Include="Abstract\IIlceDal.cs" />
+    <Compile Include="Abstract\IIlDal.cs" />
+    <Compile Include="Abstract\IMusteriDal.cs" />
+    <Compile Include="Abstract\IMusteriHareketDal.cs" />
+    <Compile Include="Abstract\INotDal.cs" />
+    <Compile Include="Abstract\IPersonelDal.cs" />
+    <Compile Include="Abstract\IStokDal.cs" />
+    <Compile Include="Abstract\IUrunDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfBankaDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfEntityRepositoryBase.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFaturaBilgiDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFaturaDetayDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFirmaDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfFirmaHareketDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfGiderDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfIlceDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfIlDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMusteriDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfMusteriHareketDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfNotDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfPersonelDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfStokDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUrunDal.cs" />
+    <Compile Include="Concrete\EntityFramework\ModelInitializer.cs" />
+    <Compile Include="Concrete\EntityFramework\MagazaOtomasyonContext.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\BankaMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\FaturaBilgiMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\FaturaDetayMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\FirmaMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\GiderMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\MusteriMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\NotMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\PersonelMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\StokMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\UrunMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MagazaOtomasyon.Entities\MagazaOtomasyon.Entities.csproj">
+      <Project>{D1373553-DF17-494C-8F99-23A622929CB3}</Project>
+      <Name>MagazaOtomasyon.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

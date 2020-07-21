@@ -3,7 +3,42 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagazaOtomasyon.Business", "MagazaOtomasyon.Business\MagazaOtomasyon.Business.csproj", "{C4DCF3AF-2856-494A-A068-C101F01ACA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagazaOtomasyon.DataAccess", "MagazaOtomasyon.DataAccess\MagazaOtomasyon.DataAccess.csproj", "{5736FADA-7F0A-43C7-9B59-B50686504047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagazaOtomasyon.Entities", "MagazaOtomasyon.Entities\MagazaOtomasyon.Entities.csproj", "{D1373553-DF17-494C-8F99-23A622929CB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagazaOtomasyon.WinUI", "MagazaOtomasyon.WinUI\MagazaOtomasyon.WinUI.csproj", "{58653E35-1989-418E-A3EA-23CFAD0CF90E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hakkında", "Hakkında", "{CF60C052-180C-4030-BF61-8A38DE02AC11}"
+	ProjectSection(SolutionItems) = preProject
+		Proje Bilgilendirme.txt = Proje Bilgilendirme.txt
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4DCF3AF-2856-494A-A068-C101F01ACA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DCF3AF-2856-494A-A068-C101F01ACA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DCF3AF-2856-494A-A068-C101F01ACA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DCF3AF-2856-494A-A068-C101F01ACA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5736FADA-7F0A-43C7-9B59-B50686504047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5736FADA-7F0A-43C7-9B59-B50686504047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5736FADA-7F0A-43C7-9B59-B50686504047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5736FADA-7F0A-43C7-9B59-B50686504047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1373553-DF17-494C-8F99-23A622929CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1373553-DF17-494C-8F99-23A622929CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1373553-DF17-494C-8F99-23A622929CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1373553-DF17-494C-8F99-23A622929CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58653E35-1989-418E-A3EA-23CFAD0CF90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58653E35-1989-418E-A3EA-23CFAD0CF90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58653E35-1989-418E-A3EA-23CFAD0CF90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58653E35-1989-418E-A3EA-23CFAD0CF90E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

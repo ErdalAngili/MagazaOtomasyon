@@ -1,0 +1,9 @@
+MagazaOtomasyon projesi daha önceden Ado.Net kullanýlarak yapýlan porjenin,
+farklý yöntem ve teknikler kullanýlarak yeniden yapýlmasý ve ilk projenin eksiklerinin mümkün olduðunca giderilmesi hedeflenmiþtir..
+Projem Katmanlý Mimari kullanýlarak yapýlmýþ olup Entity Framework CodeFirst modeli kullanýlmýþtýr.
+Proje SOLID prensiblerine mümkün olduðu kadar dikkat edilerek yapýlmýþtýr.
+Projede Entity Framework haricinde farklý bir yapýyada geçmeye müsaittir.
+Projemde Postsharp, FluentValidation, Ninject gibi teknolojiler kullanýlmýþtýr.
+Porjede CodeFirst Modeli kullanýldýðý için Mapping iþlemlerinide yapmýþ bulunmaktayým.
+
+Projeyi incelediðiniz için teþekkür ederim farklý bir projede görüþmek üzere Erdal ANGÝLÝ

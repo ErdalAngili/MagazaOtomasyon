@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58653E35-1989-418E-A3EA-23CFAD0CF90E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MagazaOtomasyon.WinUI</RootNamespace>
+    <AssemblyName>MagazaOtomasyon.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Froms\FrmAnaModul\FrmAnaSayfaModul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmAnaModul\FrmAnaSayfaModul.Designer.cs">
+      <DependentUpon>FrmAnaSayfaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmAnaSayfa\FrmAnaModul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmAnaSayfa\FrmAnaModul.Designer.cs">
+      <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaDuzenle.Designer.cs">
+      <DependentUpon>FrmBankaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaList.Designer.cs">
+      <DependentUpon>FrmBankaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmBanka\FrmBankaYeni.Designer.cs">
+      <DependentUpon>FrmBankaYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayDuzenle.Designer.cs">
+      <DependentUpon>FrmDetayDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayList.Designer.cs">
+      <DependentUpon>FrmDetayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmDetayYeni.Designer.cs">
+      <DependentUpon>FrmDetayYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaBilgiDuzenle.Designer.cs">
+      <DependentUpon>FrmFaturaBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaBilgiYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaBilgiYeni.Designer.cs">
+      <DependentUpon>FrmFaturaBilgiYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaList.Designer.cs">
+      <DependentUpon>FrmFaturaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFatura\FrmFaturaUrun.Designer.cs">
+      <DependentUpon>FrmFaturaUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaDuzenle.Designer.cs">
+      <DependentUpon>FrmFirmaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaList.Designer.cs">
+      <DependentUpon>FrmFirmaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmFirmaYeni.Designer.cs">
+      <DependentUpon>FrmFirmaYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmKodAciklama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmFirmalar\FrmKodAciklama.Designer.cs">
+      <DependentUpon>FrmKodAciklama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerDuzenle.Designer.cs">
+      <DependentUpon>FrmGiderlerDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerList.Designer.cs">
+      <DependentUpon>FrmGiderlerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmGiderler\FrmGiderlerYeni.Designer.cs">
+      <DependentUpon>FrmGiderlerYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmHareketler\FrmHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmHareketler\FrmHareket.Designer.cs">
+      <DependentUpon>FrmHareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmIletisim\FrmIletisimList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmIletisim\FrmIletisimList.Designer.cs">
+      <DependentUpon>FrmIletisimList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmIletisim\FrmMailGonder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmIletisim\FrmMailGonder.Designer.cs">
+      <DependentUpon>FrmMailGonder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmKasa\FrmKasaList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmKasa\FrmKasaList.Designer.cs">
+      <DependentUpon>FrmKasaList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriDuzenle.Designer.cs">
+      <DependentUpon>FrmMusteriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriList.Designer.cs">
+      <DependentUpon>FrmMusteriList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmMusteri\FrmMusteriYeni.Designer.cs">
+      <DependentUpon>FrmMusteriYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarDuzenle.Designer.cs">
+      <DependentUpon>FrmNotlarDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarList.Designer.cs">
+      <DependentUpon>FrmNotlarList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmNotlar\FrmNotlarYeni.Designer.cs">
+      <DependentUpon>FrmNotlarYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelDuzenle.Designer.cs">
+      <DependentUpon>FrmPersonelDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelList.Designer.cs">
+      <DependentUpon>FrmPersonelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmPersonel\FrmPersonelYeni.Designer.cs">
+      <DependentUpon>FrmPersonelYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmStok\FrmStokList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmStok\FrmStokList.Designer.cs">
+      <DependentUpon>FrmStokList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunDuzenle.Designer.cs">
+      <DependentUpon>FrmUrunDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunList.Designer.cs">
+      <DependentUpon>FrmUrunList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunYeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmUrun\FrmUrunYeni.Designer.cs">
+      <DependentUpon>FrmUrunYeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\UserControl\MyTextMail\MyTextMail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Froms\FrmAnaModul\FrmAnaSayfaModul.resx">
+      <DependentUpon>FrmAnaSayfaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmAnaSayfa\FrmAnaModul.resx">
+      <DependentUpon>FrmAnaModul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmBanka\FrmBankaDuzenle.resx">
+      <DependentUpon>FrmBankaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmBanka\FrmBankaList.resx">
+      <DependentUpon>FrmBankaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmBanka\FrmBankaYeni.resx">
+      <DependentUpon>FrmBankaYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmDetayDuzenle.resx">
+      <DependentUpon>FrmDetayDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmDetayList.resx">
+      <DependentUpon>FrmDetayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmDetayYeni.resx">
+      <DependentUpon>FrmDetayYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmFaturaBilgiDuzenle.resx">
+      <DependentUpon>FrmFaturaBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmFaturaBilgiYeni.resx">
+      <DependentUpon>FrmFaturaBilgiYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmFaturaList.resx">
+      <DependentUpon>FrmFaturaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFatura\FrmFaturaUrun.resx">
+      <DependentUpon>FrmFaturaUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFirmalar\FrmFirmaDuzenle.resx">
+      <DependentUpon>FrmFirmaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFirmalar\FrmFirmaList.resx">
+      <DependentUpon>FrmFirmaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFirmalar\FrmFirmaYeni.resx">
+      <DependentUpon>FrmFirmaYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmFirmalar\FrmKodAciklama.resx">
+      <DependentUpon>FrmKodAciklama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmGiderler\FrmGiderlerDuzenle.resx">
+      <DependentUpon>FrmGiderlerDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmGiderler\FrmGiderlerList.resx">
+      <DependentUpon>FrmGiderlerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmGiderler\FrmGiderlerYeni.resx">
+      <DependentUpon>FrmGiderlerYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmHareketler\FrmHareket.resx">
+      <DependentUpon>FrmHareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmIletisim\FrmIletisimList.resx">
+      <DependentUpon>FrmIletisimList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmIletisim\FrmMailGonder.resx">
+      <DependentUpon>FrmMailGonder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmKasa\FrmKasaList.resx">
+      <DependentUpon>FrmKasaList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmMusteri\FrmMusteriDuzenle.resx">
+      <DependentUpon>FrmMusteriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmMusteri\FrmMusteriList.resx">
+      <DependentUpon>FrmMusteriList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmMusteri\FrmMusteriYeni.resx">
+      <DependentUpon>FrmMusteriYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmNotlar\FrmNotlarDuzenle.resx">
+      <DependentUpon>FrmNotlarDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmNotlar\FrmNotlarList.resx">
+      <DependentUpon>FrmNotlarList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmNotlar\FrmNotlarYeni.resx">
+      <DependentUpon>FrmNotlarYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmPersonel\FrmPersonelDuzenle.resx">
+      <DependentUpon>FrmPersonelDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmPersonel\FrmPersonelList.resx">
+      <DependentUpon>FrmPersonelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmPersonel\FrmPersonelYeni.resx">
+      <DependentUpon>FrmPersonelYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmStok\FrmStokList.resx">
+      <DependentUpon>FrmStokList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmUrun\FrmUrunDuzenle.resx">
+      <DependentUpon>FrmUrunDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmUrun\FrmUrunList.resx">
+      <DependentUpon>FrmUrunList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmUrun\FrmUrunYeni.resx">
+      <DependentUpon>FrmUrunYeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cikis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtrele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gerial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kopyala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomePage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MagazaOtomasyon.Business\MagazaOtomasyon.Business.csproj">
+      <Project>{C4DCF3AF-2856-494A-A068-C101F01ACA2A}</Project>
+      <Name>MagazaOtomasyon.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagazaOtomasyon.DataAccess\MagazaOtomasyon.DataAccess.csproj">
+      <Project>{5736FADA-7F0A-43C7-9B59-B50686504047}</Project>
+      <Name>MagazaOtomasyon.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagazaOtomasyon.Entities\MagazaOtomasyon.Entities.csproj">
+      <Project>{D1373553-DF17-494C-8F99-23A622929CB3}</Project>
+      <Name>MagazaOtomasyon.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iletisim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gonder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giderler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fatura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FaturaDetay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hareketler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sabah.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>
